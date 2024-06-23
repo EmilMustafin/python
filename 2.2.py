@@ -1,6 +1,5 @@
 import numpy as np
 from sklearn.cluster import KMeans
-from sklearn.utils import shuffle
 from PIL import Image
 
 def reduce_colors(image_path, num_colors):
