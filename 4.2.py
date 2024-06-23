@@ -33,5 +33,9 @@ def reduce_colors(image_path, num_colors):
 
 # Пример использования
 image_path = 'fsd.png'
-num_colors = 2
-reduce_colors(image_path, num_colors)
+
+num_colors = int(input('Введите количество цветов между 3 и 5: '))
+if(num_colors<3 or num_colors>5):
+    print("Неправильное количество цветов")
+else:
+    reduce_colors(image_path, num_colors)
